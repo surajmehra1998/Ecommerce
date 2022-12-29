@@ -1,0 +1,122 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.links {
+  gap: 15px;
+}
+img {
+  max-width: 100%;
+}
+.slider-container {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  position: relative;
+  .slide {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    transition: all 1s ease;
+    img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .btn-container {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 22;
+    .btn {
+      background-color: blueviolet;
+      color: #fff;
+      margin-right: 20px;
+    }
+  }
+}
+
+.horz-img img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.vertical-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.category .col-sm-6,
+.category .col-sm-3,
+.category .col-sm-12 {
+  padding: 0 5px;
+}
+.btn-product {
+  background-color: #fff !important;
+  color: #333;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.contact {
+  background-color: blue;
+  padding: 20px 0;
+  color: #fff;
+  .form-control {
+    border-radius: 4px 0 0 4px;
+    margin-left: 20px;
+  }
+  .btn {
+    white-space: nowrap;
+    border-radius: 0 4px 4px 0;
+    background-color: green;
+  }
+  .icons {
+    svg {
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+}
+.section {
+  padding: 30px 0;
+}
+.cart-btn {
+  min-width: 150px;
+}
+.compare-btn {
+  .btn {
+    margin: 0 20px 0 0;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+.info {
+  p {
+    margin: 0;
+    color: gray;
+  }
+}

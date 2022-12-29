@@ -1,0 +1,15 @@
+.cart_card {
+  max-width: 400px;
+  background: #fff;
+  z-index: 22;
+  p {
+    font-size: 14px;
+    margin: 0;
+    color: grey;
+  }
+  img {
+    max-height: 100px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,25 @@
+header {
+  position: sticky;
+  top: 0;
+  transition: all 0.4s ease;
+  z-index: 222;
+  .icons_list {
+    cursor: pointer;
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+    .cart_count {
+      span {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+        background-color: blue;
+        color: #fff;
+        right: -8px;
+        top: -3px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
